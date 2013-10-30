@@ -15,23 +15,8 @@
 		70C00F9C1820ED43003FE823 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C00F9B1820ED43003FE823 /* AppDelegate.m */; };
 		70C00F9F1820ED43003FE823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C00F9D1820ED43003FE823 /* Main.storyboard */; };
 		70C00FA41820ED43003FE823 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C00FA31820ED43003FE823 /* Images.xcassets */; };
-		70C00FAB1820ED44003FE823 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C00FAA1820ED44003FE823 /* XCTest.framework */; };
-		70C00FAC1820ED44003FE823 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C00F8B1820ED43003FE823 /* Foundation.framework */; };
-		70C00FAD1820ED44003FE823 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C00F8F1820ED43003FE823 /* UIKit.framework */; };
-		70C00FB51820ED44003FE823 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70C00FB31820ED44003FE823 /* InfoPlist.strings */; };
-		70C00FB71820ED44003FE823 /* TableViewFooterResizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C00FB61820ED44003FE823 /* TableViewFooterResizeTests.m */; };
 		70C00FC21820ED7A003FE823 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C00FC11820ED7A003FE823 /* MyTableViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		70C00FAE1820ED44003FE823 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 70C00F801820ED43003FE823 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 70C00F871820ED43003FE823;
-			remoteInfo = TableViewFooterResize;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		70C00F881820ED43003FE823 /* TableViewFooterResize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewFooterResize.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,11 +31,7 @@
 		70C00F9B1820ED43003FE823 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		70C00F9E1820ED43003FE823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70C00FA31820ED43003FE823 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		70C00FA91820ED44003FE823 /* TableViewFooterResizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewFooterResizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C00FAA1820ED44003FE823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		70C00FB21820ED44003FE823 /* TableViewFooterResizeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewFooterResizeTests-Info.plist"; sourceTree = "<group>"; };
-		70C00FB41820ED44003FE823 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		70C00FB61820ED44003FE823 /* TableViewFooterResizeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewFooterResizeTests.m; sourceTree = "<group>"; };
 		70C00FC01820ED7A003FE823 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		70C00FC11820ED7A003FE823 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,16 +47,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70C00FA61820ED44003FE823 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70C00FAB1820ED44003FE823 /* XCTest.framework in Frameworks */,
-				70C00FAD1820ED44003FE823 /* UIKit.framework in Frameworks */,
-				70C00FAC1820ED44003FE823 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				70C00F911820ED43003FE823 /* TableViewFooterResize */,
-				70C00FB01820ED44003FE823 /* TableViewFooterResizeTests */,
 				70C00F8A1820ED43003FE823 /* Frameworks */,
 				70C00F891820ED43003FE823 /* Products */,
 			);
@@ -93,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				70C00F881820ED43003FE823 /* TableViewFooterResize.app */,
-				70C00FA91820ED44003FE823 /* TableViewFooterResizeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,24 +103,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		70C00FB01820ED44003FE823 /* TableViewFooterResizeTests */ = {
-			isa = PBXGroup;
-			children = (
-				70C00FB61820ED44003FE823 /* TableViewFooterResizeTests.m */,
-				70C00FB11820ED44003FE823 /* Supporting Files */,
-			);
-			path = TableViewFooterResizeTests;
-			sourceTree = "<group>";
-		};
-		70C00FB11820ED44003FE823 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				70C00FB21820ED44003FE823 /* TableViewFooterResizeTests-Info.plist */,
-				70C00FB31820ED44003FE823 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,24 +123,6 @@
 			productReference = 70C00F881820ED43003FE823 /* TableViewFooterResize.app */;
 			productType = "com.apple.product-type.application";
 		};
-		70C00FA81820ED44003FE823 /* TableViewFooterResizeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 70C00FBD1820ED44003FE823 /* Build configuration list for PBXNativeTarget "TableViewFooterResizeTests" */;
-			buildPhases = (
-				70C00FA51820ED44003FE823 /* Sources */,
-				70C00FA61820ED44003FE823 /* Frameworks */,
-				70C00FA71820ED44003FE823 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				70C00FAF1820ED44003FE823 /* PBXTargetDependency */,
-			);
-			name = TableViewFooterResizeTests;
-			productName = TableViewFooterResizeTests;
-			productReference = 70C00FA91820ED44003FE823 /* TableViewFooterResizeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,11 +131,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Christian Mittendorf";
-				TargetAttributes = {
-					70C00FA81820ED44003FE823 = {
-						TestTargetID = 70C00F871820ED43003FE823;
-					};
-				};
 			};
 			buildConfigurationList = 70C00F831820ED43003FE823 /* Build configuration list for PBXProject "TableViewFooterResize" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -218,7 +146,6 @@
 			projectRoot = "";
 			targets = (
 				70C00F871820ED43003FE823 /* TableViewFooterResize */,
-				70C00FA81820ED44003FE823 /* TableViewFooterResizeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,14 +158,6 @@
 				70C00FA41820ED43003FE823 /* Images.xcassets in Resources */,
 				70C00F961820ED43003FE823 /* InfoPlist.strings in Resources */,
 				70C00F9F1820ED43003FE823 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		70C00FA71820ED44003FE823 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70C00FB51820ED44003FE823 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,23 +174,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70C00FA51820ED44003FE823 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70C00FB71820ED44003FE823 /* TableViewFooterResizeTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		70C00FAF1820ED44003FE823 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 70C00F871820ED43003FE823 /* TableViewFooterResize */;
-			targetProxy = 70C00FAE1820ED44003FE823 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		70C00F941820ED43003FE823 /* InfoPlist.strings */ = {
@@ -288,14 +191,6 @@
 				70C00F9E1820ED43003FE823 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		70C00FB31820ED44003FE823 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				70C00FB41820ED44003FE823 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,48 +294,6 @@
 			};
 			name = Release;
 		};
-		70C00FBE1820ED44003FE823 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TableViewFooterResize.app/TableViewFooterResize";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TableViewFooterResize/TableViewFooterResize-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TableViewFooterResizeTests/TableViewFooterResizeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		70C00FBF1820ED44003FE823 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TableViewFooterResize.app/TableViewFooterResize";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TableViewFooterResize/TableViewFooterResize-Prefix.pch";
-				INFOPLIST_FILE = "TableViewFooterResizeTests/TableViewFooterResizeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -460,14 +313,7 @@
 				70C00FBC1820ED44003FE823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		70C00FBD1820ED44003FE823 /* Build configuration list for PBXNativeTarget "TableViewFooterResizeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				70C00FBE1820ED44003FE823 /* Debug */,
-				70C00FBF1820ED44003FE823 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
