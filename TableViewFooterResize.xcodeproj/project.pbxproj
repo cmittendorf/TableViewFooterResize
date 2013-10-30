@@ -14,13 +14,13 @@
 		70C00F981820ED43003FE823 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C00F971820ED43003FE823 /* main.m */; };
 		70C00F9C1820ED43003FE823 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C00F9B1820ED43003FE823 /* AppDelegate.m */; };
 		70C00F9F1820ED43003FE823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C00F9D1820ED43003FE823 /* Main.storyboard */; };
-		70C00FA21820ED43003FE823 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C00FA11820ED43003FE823 /* ViewController.m */; };
 		70C00FA41820ED43003FE823 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C00FA31820ED43003FE823 /* Images.xcassets */; };
 		70C00FAB1820ED44003FE823 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C00FAA1820ED44003FE823 /* XCTest.framework */; };
 		70C00FAC1820ED44003FE823 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C00F8B1820ED43003FE823 /* Foundation.framework */; };
 		70C00FAD1820ED44003FE823 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C00F8F1820ED43003FE823 /* UIKit.framework */; };
 		70C00FB51820ED44003FE823 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70C00FB31820ED44003FE823 /* InfoPlist.strings */; };
 		70C00FB71820ED44003FE823 /* TableViewFooterResizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C00FB61820ED44003FE823 /* TableViewFooterResizeTests.m */; };
+		70C00FC21820ED7A003FE823 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C00FC11820ED7A003FE823 /* MyTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		70C00F9A1820ED43003FE823 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		70C00F9B1820ED43003FE823 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		70C00F9E1820ED43003FE823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		70C00FA01820ED43003FE823 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		70C00FA11820ED43003FE823 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		70C00FA31820ED43003FE823 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		70C00FA91820ED44003FE823 /* TableViewFooterResizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewFooterResizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C00FAA1820ED44003FE823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		70C00FB21820ED44003FE823 /* TableViewFooterResizeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewFooterResizeTests-Info.plist"; sourceTree = "<group>"; };
 		70C00FB41820ED44003FE823 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70C00FB61820ED44003FE823 /* TableViewFooterResizeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewFooterResizeTests.m; sourceTree = "<group>"; };
+		70C00FC01820ED7A003FE823 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		70C00FC11820ED7A003FE823 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +114,9 @@
 			children = (
 				70C00F9A1820ED43003FE823 /* AppDelegate.h */,
 				70C00F9B1820ED43003FE823 /* AppDelegate.m */,
+				70C00FC01820ED7A003FE823 /* MyTableViewController.h */,
+				70C00FC11820ED7A003FE823 /* MyTableViewController.m */,
 				70C00F9D1820ED43003FE823 /* Main.storyboard */,
-				70C00FA01820ED43003FE823 /* ViewController.h */,
-				70C00FA11820ED43003FE823 /* ViewController.m */,
 				70C00FA31820ED43003FE823 /* Images.xcassets */,
 				70C00F921820ED43003FE823 /* Supporting Files */,
 			);
@@ -249,9 +249,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70C00FA21820ED43003FE823 /* ViewController.m in Sources */,
 				70C00F9C1820ED43003FE823 /* AppDelegate.m in Sources */,
 				70C00F981820ED43003FE823 /* main.m in Sources */,
+				70C00FC21820ED7A003FE823 /* MyTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
