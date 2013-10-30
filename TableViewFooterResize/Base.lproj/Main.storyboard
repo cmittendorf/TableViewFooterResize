@@ -33,7 +33,6 @@
                                 <constraint firstAttribute="trailing" secondItem="4yc-nx-3i3" secondAttribute="trailing" constant="20" id="BuH-9l-6Uc"/>
                                 <constraint firstItem="4yc-nx-3i3" firstAttribute="top" secondItem="uhB-ih-Lsu" secondAttribute="top" constant="11" id="EXj-BA-w6G"/>
                                 <constraint firstItem="4yc-nx-3i3" firstAttribute="leading" secondItem="uhB-ih-Lsu" secondAttribute="leading" constant="20" id="XsK-yE-7ky"/>
-                                <constraint firstAttribute="bottom" secondItem="4yc-nx-3i3" secondAttribute="bottom" constant="12" id="tx0-TH-nKI"/>
                             </constraints>
                         </view>
                         <prototypes>
