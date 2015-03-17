@@ -27,3 +27,12 @@ The table view does get the size of the footer view by assigning the footer to t
 Resizing the footer view won't inform the table view about the new height.
 
 What am I missing? At what point should I update and inform the tableview about the new height of the footer view?
+
+Update
+======
+
+Thanks to the pull request (81b96fe667d34ca0eb9208a11cfdc8e3fe6dd463) of @phalbin the problem described above is solved. It is now working:
+
+![tableFooterView with fixed autolayout](./screenshot3.png "screenshot 3")
+
+For further details see: http://prod.lists.apple.com/archives/cocoa-dev/2014/Jun/msg00127.html
