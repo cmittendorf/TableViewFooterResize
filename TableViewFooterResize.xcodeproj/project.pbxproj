@@ -36,6 +36,7 @@
 		70C00FC01820ED7A003FE823 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		70C00FC11820ED7A003FE823 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		70FDE2ED1AB8C4C9004EA53F /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		70FDE2EF1AB8C646004EA53F /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		70C00F7F1820ED43003FE823 = {
 			isa = PBXGroup;
 			children = (
+				70FDE2EF1AB8C646004EA53F /* readme.md */,
 				70C00F911820ED43003FE823 /* TableViewFooterResize */,
 				70C00F8A1820ED43003FE823 /* Frameworks */,
 				70C00F891820ED43003FE823 /* Products */,
