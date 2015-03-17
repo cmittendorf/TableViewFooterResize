@@ -16,6 +16,7 @@
 		70C00F9F1820ED43003FE823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C00F9D1820ED43003FE823 /* Main.storyboard */; };
 		70C00FA41820ED43003FE823 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C00FA31820ED43003FE823 /* Images.xcassets */; };
 		70C00FC21820ED7A003FE823 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C00FC11820ED7A003FE823 /* MyTableViewController.m */; };
+		70FDE2EE1AB8C4C9004EA53F /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70FDE2ED1AB8C4C9004EA53F /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		70C00FAA1820ED44003FE823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		70C00FC01820ED7A003FE823 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		70C00FC11820ED7A003FE823 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		70FDE2ED1AB8C4C9004EA53F /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				70C00F9D1820ED43003FE823 /* Main.storyboard */,
 				70C00FA31820ED43003FE823 /* Images.xcassets */,
 				70C00F921820ED43003FE823 /* Supporting Files */,
+				70FDE2ED1AB8C4C9004EA53F /* Launch Screen.xib */,
 			);
 			path = TableViewFooterResize;
 			sourceTree = "<group>";
@@ -129,7 +132,7 @@
 		70C00F801820ED43003FE823 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Christian Mittendorf";
 			};
 			buildConfigurationList = 70C00F831820ED43003FE823 /* Build configuration list for PBXProject "TableViewFooterResize" */;
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70C00FA41820ED43003FE823 /* Images.xcassets in Resources */,
+				70FDE2EE1AB8C4C9004EA53F /* Launch Screen.xib in Resources */,
 				70C00F961820ED43003FE823 /* InfoPlist.strings in Resources */,
 				70C00F9F1820ED43003FE823 /* Main.storyboard in Resources */,
 			);
@@ -200,7 +204,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -229,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -239,7 +242,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -262,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -272,7 +274,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableViewFooterResize/TableViewFooterResize-Prefix.pch";
 				INFOPLIST_FILE = "TableViewFooterResize/TableViewFooterResize-Info.plist";
@@ -285,7 +286,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableViewFooterResize/TableViewFooterResize-Prefix.pch";
 				INFOPLIST_FILE = "TableViewFooterResize/TableViewFooterResize-Info.plist";
