@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IFk-eJ-qw8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IFk-eJ-qw8">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--My Table View Controller - My Table-->
+        <!--My Table-->
         <scene sceneID="uTG-yE-PDg">
             <objects>
                 <tableViewController id="QHj-Ah-gE1" customClass="MyTableViewController" sceneMemberID="viewController">
@@ -18,7 +19,6 @@
                             <subviews>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="4yc-nx-3i3">
                                     <rect key="frame" x="20" y="11" width="280" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ftj-NL-aZE"/>
@@ -30,6 +30,7 @@
                             </subviews>
                             <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
+                                <constraint firstAttribute="bottom" secondItem="4yc-nx-3i3" secondAttribute="bottom" constant="12" id="0gC-uZ-2ZZ"/>
                                 <constraint firstAttribute="trailing" secondItem="4yc-nx-3i3" secondAttribute="trailing" constant="20" id="BuH-9l-6Uc"/>
                                 <constraint firstItem="4yc-nx-3i3" firstAttribute="top" secondItem="uhB-ih-Lsu" secondAttribute="top" constant="11" id="EXj-BA-w6G"/>
                                 <constraint firstItem="4yc-nx-3i3" firstAttribute="leading" secondItem="uhB-ih-Lsu" secondAttribute="leading" constant="20" id="XsK-yE-7ky"/>

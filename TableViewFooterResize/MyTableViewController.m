@@ -28,6 +28,13 @@
     [self.tableView setTableFooterView:_footerView];
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    CGRect frame = _footerView.frame;
+    frame.size.height = [_footerView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    _footerView.frame = frame;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
