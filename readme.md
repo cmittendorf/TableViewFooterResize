@@ -31,7 +31,7 @@ What am I missing? At what point should I update and inform the tableview about 
 Update
 ======
 
-Thanks to the pull request (https://github.com/cmittendorf/TableViewFooterResize/commit/81b96fe667d34ca0eb9208a11cfdc8e3fe6dd463) of https://github.com/phaibin the problem described above is solved. It is now working:
+Thanks to the [pull request](https://github.com/cmittendorf/TableViewFooterResize/commit/81b96fe667d34ca0eb9208a11cfdc8e3fe6dd463) of [phaibin](https://github.com/phaibin) the problem described above is solved:
 
 ![tableFooterView with fixed autolayout](./screenshot3.png "screenshot 3")
 
