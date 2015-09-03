@@ -9,6 +9,4 @@
 #import <UIKit/UIKit.h>
 
 @interface MyTableViewController : UITableViewController
-@property (assign) IBOutlet UIView *footerView;
-@property (assign) IBOutlet UILabel *footerLabel;
 @end

@@ -9,61 +9,68 @@
 #import "MyTableViewController.h"
 
 
+NSString * const longText = @"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque ligula ligula, dignissim id, rhoncus rhoncus, sagittis et, massa. In sit amet nulla a mi ultricies suscipit.";
+NSString * const shortText = @"foobar";
+
 @interface MyTableViewController ()
+@property (assign) IBOutlet UIView *footerView;
+@property (assign) IBOutlet UILabel *footerLabel;
+
+@property (nonatomic) NSArray *tableViewItems;
 @end
 
 @implementation MyTableViewController
-{
-    NSArray *_tableViewItems;
-}
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
-    _tableViewItems = @[@"one", @"two", @"three", @"four", @"five"];
+    self.tableViewItems = @[@"one", @"two", @"three", @"four", @"five", @"six", @"seven", @"eight", @"nine", @"ten", @"eleven", @"twelve", @"thirteen", @"fourteen", @"fivteen"];
     
-    _footerLabel.text = @"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque ligula ligula, dignissim id, rhoncus rhoncus, sagittis et, massa. In sit amet nulla a mi ultricies suscipit.";
+    self.footerLabel.text = longText;
     
     [self.tableView setTableFooterView:_footerView];
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    CGRect frame = _footerView.frame;
-    frame.size.height = [_footerView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    _footerView.frame = frame;
+
+    // calculate the height for the footerView
+    CGRect frame = self.footerView.frame;
+    frame.size.height = [self.footerView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+
+    // adjust the contentSize of the tableView
+    CGSize contentSize = self.tableView.contentSize;
+    CGFloat delta = (frame.size.height - self.footerView.frame.size.height);
+    self.tableView.contentSize = CGSizeMake(contentSize.width, contentSize.height + delta);
+
+    self.footerView.frame = frame;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [_tableViewItems count];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.tableViewItems count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    cell.textLabel.text = _tableViewItems[indexPath.row];
+    cell.textLabel.text = self.tableViewItems[indexPath.row];
     return cell;
+}
+
+- (IBAction)updateFooterText:(id)sender {
+    _footerLabel.text = [_footerLabel.text isEqualToString:longText] ? shortText : longText;
+    [self.tableView setNeedsLayout];
 }
 
 @end

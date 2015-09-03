@@ -36,3 +36,5 @@ Thanks to the [pull request](https://github.com/cmittendorf/TableViewFooterResiz
 ![tableFooterView with fixed autolayout](./screenshot3.png "screenshot 3")
 
 For further details see: http://prod.lists.apple.com/archives/cocoa-dev/2014/Jun/msg00127.html
+
+Updated the example to create a tableview that requires scrolling.
